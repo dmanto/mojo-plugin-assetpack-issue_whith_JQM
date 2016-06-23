@@ -2,7 +2,7 @@
 use Mojolicious::Lite;
 
 plugin AssetPack => {
-  pipes => [qw(Css)]
+  pipes => [qw(Fetch Css)]
 };
  
 app->asset->process(
